@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Título: Blog Pessoal
 
-## Getting Started
+Descrição: Aplicação de blog onde os artigos são carregados dinamicamente com rotas personalizadas, dados buscados via API (neste casu, a simulação do crudcrud) e aplicação de boas práticas de SEO utilizando as funcionalidades do App Router.
 
-First, run the development server:
+Tecnologias utilizadas: Next.js · TypeScript · Node.js · CSS Modules
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Instalação:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Passos para clonar e rodar: git clone https://github.com/tayanibritto/taymayarablog.git · cd taymayarablog · npm install · npm run dev · copiar e colar a URL que o terminal mostrar (geralmente http://localhost:5173) · É necessário ter o Node.js instalado · É necessário gerar um link novo de API no https://crudcrud.com e adicionar em .env.local · É necessário ter acesso à Internet para que a aplicação funcione.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Estrutura do Projeto:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- public/
+    - erro.png
+    - loading.gif
+    - logo.png
+    - not-found.png
+    - separador.png
+- src/
+    - app/
+        - api/
+            - route.ts
+        - artigos/
+            - [slug]/
+                - page.module.css
+                - page.tsx
+            - novo/
+                - page.module.css
+                - page.tsx
+        - contato/
+            - page.module.css
+            - page.tsx
+        - sobre/
+            - page.module.css
+            - page.tsx
+        - error.tsx
+        - global.module.css
+        - layout.tsx
+        - loading.tsx
+        - main.module.css
+        - not-found.tsx
+        - page.tsx
+    - components/
+        - CreatePost.module.css
+        - CreatePost.tsx
+        - Footer.module.css
+        - Footer.tsx
+        - Header.module.css
+        - Header.tsx
+    - lib/
+        - crudcrud.ts
+.gitignore
+AGENTS.md
+CLAUDE.md
+eslint.config.mjs
+next.config.ts
+package-lock.json
+package.json
+tsconfig.json
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Observações:  É necessário ter o Node.js instalado · É necessário gerar um link novo de API no https://crudcrud.com e adicionar em .env.local · É necessário ter acesso à Internet para que a aplicação funcione.
