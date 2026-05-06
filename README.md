@@ -6,7 +6,7 @@ Tecnologias utilizadas: Next.js · TypeScript · Node.js · CSS Modules
 
 Instalação:
 
-Passos para clonar e rodar: git clone https://github.com/tayanibritto/taymayarablog.git · cd taymayarablog · npm install · npm run dev · copiar e colar a URL que o terminal mostrar (geralmente http://localhost:5173) · É necessário ter o Node.js instalado · É necessário gerar um link novo de API no https://crudcrud.com e adicionar em .env.local · É necessário ter acesso à Internet para que a aplicação funcione.
+Passos para clonar e rodar: git clone https://github.com/tayanibritto/taymayarablog.git · cd taymayarablog · npm install · npm run dev · copiar e colar a URL que o terminal mostrar (geralmente http://localhost:3000) · É necessário ter o Node.js instalado · É necessário gerar um link novo de API no https://crudcrud.com e adicionar em .env.local · É necessário ter acesso à Internet para que a aplicação funcione.
 
 Estrutura do Projeto:
 
