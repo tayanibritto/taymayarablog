@@ -1,0 +1,36 @@
+name: Deploy Vercel
+
+on:
+    push:
+        branches:
+            - main
+    
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout do código
+              uses: actions/checkout@v4
+
+            - name: Instalação do Node.js
+              uses: actions/setup-node@v4
+              with:
+                node-version: 20
+                cache: npm
+                cache-dependency-path: package-lock.json
+
+            - name: Instalar dependências
+              run: npm ci
+
+            - name: Rodar build
+              run: npm run build
+              env:
+                NEXT_PUBLIC_CRUD_API_URL: ${{ secrets.NEXT_PUBLIC_CRUD_API_URL }}
+                NEXT_PUBLIC_CRUD_API_KEY: ${{ secrets.NEXT_PUBLIC_CRUD_API_KEY }}
+                NEXT_PUBLIC_CRUD_API_COLLECTION: ${{ secrets.NEXT_PUBLIC_CRUD_API_COLLECTION }}
+
+            - name: Deploy para Vercel
+              run: npx vercel --prod --token=${{ secrets.VERCEL_TOKEN }}
+
+    
