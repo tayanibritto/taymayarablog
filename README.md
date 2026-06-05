@@ -21,6 +21,10 @@ Passos para clonar e rodar: git clone https://github.com/tayanibritto/taymayarab
 
 Estrutura do Projeto:
 
+- .github/
+    - workflows/
+        - deploy.yml
+        - main.yml
 - public/
     - erro.png
     - loading.gif
@@ -28,6 +32,9 @@ Estrutura do Projeto:
     - not-found.png
     - separador.png
 - src/
+    - __tests__
+        - CreatePost.test.tsx
+        - slug.test.ts
     - app/
         - api/
             - route.ts
@@ -64,9 +71,12 @@ Estrutura do Projeto:
 AGENTS.md
 CLAUDE.md
 eslint.config.mjs
+jest.config.mjs
+jest.setup.ts
 next.config.ts
 package-lock.json
 package.json
 tsconfig.json
+tsconfig.test.json
 
 Observações:  É necessário ter o Node.js instalado · É necessário gerar um link novo de API no https://crudcrud.com e adicionar em .env.local · É necessário ter acesso à Internet para que a aplicação funcione.
