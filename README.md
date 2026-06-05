@@ -1,5 +1,7 @@
 Título: Blog Pessoal
 
+Link: https://taymayarablog.vercel.app/
+
 Descrição: Aplicação de blog onde os artigos são carregados dinamicamente com rotas personalizadas, dados buscados via API (neste caso, a simulação do crudcrud) e aplicação de boas práticas de SEO utilizando as funcionalidades do App Router.
 
 Tecnologias utilizadas: Next.js · TypeScript · Node.js · CSS Modules
