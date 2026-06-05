@@ -4,6 +4,15 @@ Link: https://taymayarablog.vercel.app/
 
 Descrição: Aplicação de blog onde os artigos são carregados dinamicamente com rotas personalizadas, dados buscados via API (neste caso, a simulação do crudcrud) e aplicação de boas práticas de SEO utilizando as funcionalidades do App Router.
 
+O projeto utiliza GitHub Actions para:
+
+- Validação de código (ESLint);
+- Testes automatizados (Jest);
+- Build da aplicação (Next.js);
+- Deploy automático no Vercel (CD).
+
+Fluxo: push -> CI -> CD -> deploy
+
 Tecnologias utilizadas: Next.js · TypeScript · Node.js · CSS Modules
 
 Instalação:
