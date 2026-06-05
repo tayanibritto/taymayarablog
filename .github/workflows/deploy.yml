@@ -31,6 +31,8 @@ jobs:
                 NEXT_PUBLIC_CRUD_API_COLLECTION: ${{ secrets.NEXT_PUBLIC_CRUD_API_COLLECTION }}
 
             - name: Deploy para Vercel
+              env:
+                VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
               run: npx vercel --prod --token=${{ secrets.VERCEL_TOKEN }}
 
     
