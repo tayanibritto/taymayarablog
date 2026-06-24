@@ -15,6 +15,7 @@ export function CreatePost({ onPostCreated }: CreatePostProps) {
     const [content, setContent] = useState("");
     const [author, setAuthor] = useState("");
     const [loading, setLoading] = useState(false);
+    const [error, setError] = useState<string | null>(null);
 
     async function handleSubmit() {
         if (!title || !content || !author) return;
@@ -24,23 +25,30 @@ export function CreatePost({ onPostCreated }: CreatePostProps) {
             strict: true, // Remove caracteres especiais
         })
 
-        setLoading(true);
-        await createPost({
-            title,
-            content,
-            slug,
-            author,
-            publishedAt: new Date().toISOString(),
-        });
+        try {
+            setLoading(true);
+            setError(null);
 
-        // Limpa o formulário após criar o post
-        setTitle("");
-        setContent("");
-        setAuthor("");
-        setLoading(false);
+            await createPost({
+                title,
+                content,
+                slug,
+                author,
+                publishedAt: new Date().toISOString(),
+            });
 
-        // Avisa a página que o post foi criado
-        onPostCreated(slug);
+            // Limpa o formulário após criar o post
+            setTitle("");
+            setContent("");
+            setAuthor("");
+            // Avisa a página que o post foi criado
+            onPostCreated(slug);
+        } catch (err) {
+            console.error(err);
+            setError("Erro ao publicar post.");
+        } finally {
+            setLoading(false);
+        }
     }
 
     return (
@@ -86,6 +94,8 @@ export function CreatePost({ onPostCreated }: CreatePostProps) {
                 </button>
 
             </form>
+
+            {error && <p style={{ color: "red"}}>{error}</p>}
 
         </section>
     );
