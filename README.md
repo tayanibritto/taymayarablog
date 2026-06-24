@@ -15,6 +15,8 @@ Fluxo: push -> CI -> CD -> deploy
 
 Tecnologias utilizadas: Next.js · TypeScript · Node.js · CSS Modules
 
+Segurança: Algumas vulnerabilidades moderadas permanecem em dependências indiretas, relacionadas ao Jest e ferramentas internas. Optou-se por não utilizar "npm audit fix --force" para evitar quebras no projeto.
+
 Instalação:
 
 Passos para clonar e rodar: git clone https://github.com/tayanibritto/taymayarablog.git · cd taymayarablog · npm install · npm run dev · copiar e colar a URL que o terminal mostrar (geralmente http://localhost:3000) · É necessário ter o Node.js instalado · É necessário gerar um link novo de API no https://crudcrud.com e adicionar em .env.local · É necessário ter acesso à Internet para que a aplicação funcione.
@@ -67,6 +69,7 @@ Estrutura do Projeto:
         - Header.tsx
     - lib/
         - crudcrud.ts
+        - mockPosts.ts
 .gitignore
 AGENTS.md
 CLAUDE.md
