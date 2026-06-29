@@ -23,7 +23,7 @@
     gap: 24px;
     padding: 0;
     margin: 0;
-    background: #fcfeff;
+    background: #e2e8f0;
     border-radius: 8px;
     padding: 10px 16px;
     box-shadow: 0 2px 6px rgba(112, 112, 112, 0.1);
@@ -35,7 +35,7 @@
 }
 
 .nav__link {
-    color: #334155;
+    color: #1e293b;
     font-weight: 500;
     font-size: 0.95rem;
     padding: 8px 10px;
@@ -49,7 +49,7 @@
 }
 
 .nav__publish {
-    color: #d64550;
+    color: #b91c1c;
     padding: 8px 16px;
     border-radius: 4px;
     font-weight: 500;
@@ -58,7 +58,7 @@
 }
 
 .nav__publish:hover {
-    color: #d11827;
+    color: #9e131e;
     background: #f0e2ea;
     transition: 0.2s ease;
 }
