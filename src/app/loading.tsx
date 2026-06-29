@@ -11,10 +11,12 @@ export default function Loading() {
                 Clique no título de um artigo para visualizá-lo:
             </p>
 
-            <ul className={styles.ul} style={{ minHeight: "300px" }}>
-                {[1,2,3].map((_, i) => (
-                    <li key={i}>
-                        <p className={styles.message}>Carregando artigos...</p>
+            <ul className={styles.ul} style={{ minHeight: "1000px" }}>
+                {Array.from({ length: 5 }).map((_, i) => (
+                    <li key={i} style={{ marginBottom: "20px" }}>
+                        <p className={styles.message}>
+                            Carregando artigos...
+                        </p>
                     </li>
                 ))}
 
