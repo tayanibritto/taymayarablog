@@ -15,7 +15,7 @@ export default function Error({
 
             <h2 className={styles.h2}>Ops... Ocorreu um erro!</h2>
 
-            <Image src="/erro.png" alt="Erro!" width={200} height={200} className={styles.img} />
+            <Image src="/erro.webp" alt="Erro!" width={200} height={200} className={styles.img} />
 
             <p className={styles.message}>{error.message}</p>
 

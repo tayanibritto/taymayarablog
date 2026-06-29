@@ -6,7 +6,7 @@ export default function NotFound() {
     return (
         <main className={global.main}>
 
-            <Image src="/not-found.png" alt="Página não encontrada" width={200} height={200} className={styles.img} />
+            <Image src="/not-found.webp" alt="Página não encontrada" width={200} height={200} className={styles.img} />
 
             <h2 className={styles.h2}>Página não encontrada</h2>
 

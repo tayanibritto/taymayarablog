@@ -6,7 +6,7 @@ export default function Loading() {
     return (
         <main className={global.main}>
 
-            <Image src="/loading.gif" alt="Carregando" width={200} height={200} className={styles.img} unoptimized />
+            <Image src="/loading.webp" alt="Carregando" width={200} height={200} className={styles.img} unoptimized />
 
             <p className={styles.message}>Carregando...</p>
 
