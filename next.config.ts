@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    formats: ["image/webp"],
+    deviceSizes: [320, 420, 768],
+  }
 };
 
 export default nextConfig;

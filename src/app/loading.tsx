@@ -1,13 +1,21 @@
 import global from './global.module.css';
-import Image from 'next/image';
+import styles from './main.module.css'
 
 export default function Loading() {
     return (
         <main className={global.main}>
 
-            <Image src="/loading.webp" alt="Carregando" width={200} height={200} className={global.img} unoptimized />
+            <h2 className={styles.h2}>Artigos:</h2>
 
-            <p className={global.message}>Carregando...</p>
+            <p className={global.text}>
+                Clique no título de um artigo para visualizá-lo:
+            </p>
+
+            <ul className={styles.ul} style={{ minHeight: "300px" }}>
+                <li>
+                    <p className={styles.message}>Carregando artigos...</p>
+                </li>
+            </ul>
 
         </main>
     );

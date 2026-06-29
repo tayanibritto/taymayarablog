@@ -13,7 +13,7 @@ export function Header() {
                     width={384}
                     height={256}
                     priority
-                    loading="eager"
+                    sizes="(max-width: 768px) 150px, 384px"
                 />
             </div>
 
