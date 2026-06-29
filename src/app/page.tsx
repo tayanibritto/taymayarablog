@@ -18,7 +18,7 @@ export default async function Home() {
     return (
         <main className={styles.main}>
 
-            <h2 className={pageStyles.h2}>Artigos:</h2>
+            <h2 className={styles.h2}>Artigos:</h2>
 
             <p className={styles.text}>Clique no título de um artigo para visualizá-lo:</p>
 
@@ -31,7 +31,7 @@ export default async function Home() {
                             {post.title}
                         </Link>
 
-                        <p className={pageStyles.signature}>Por {post.author}, em {new Date(post.publishedAt).toLocaleDateString("pt-BR")}</p>
+                        <p className={styles.signature}>Por {post.author}, em {new Date(post.publishedAt).toLocaleDateString("pt-BR")}</p>
 
                         <p className={styles.text}>{post.content.substring(0, 200)}...</p>
 
