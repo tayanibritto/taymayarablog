@@ -3,13 +3,7 @@ import Image from 'next/image';
 
 export default function Loading() {
     return (
-        <main className={global.main} style={{
-            minHeight: "80vh",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            flexDirection: "column"
-        }}>
+        <main className={global.main}>
 
             <Image src="/loading.webp" alt="Carregando" width={200} height={200} className={global.img} unoptimized />
 

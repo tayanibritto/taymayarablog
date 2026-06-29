@@ -3,13 +3,7 @@ import Image from 'next/image';
 
 export default function NotFound() {
     return (
-        <main className={global.main} style={{
-            minHeight: "80vh",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            flexDirection: "column"
-        }}>
+        <main className={global.main}>
 
             <Image src="/not-found.webp" alt="Página não encontrada" width={200} height={200} className={global.img} />
 

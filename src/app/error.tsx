@@ -10,13 +10,7 @@ export default function Error({
     error: Error;
     reset: () => void;}) {
     return (
-        <main className={global.main} style={{
-            minHeight: "80vh",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            flexDirection: "column"
-        }}>
+        <main className={global.main}>
 
             <h2 className={global.h2}>Ops... Ocorreu um erro!</h2>
 
