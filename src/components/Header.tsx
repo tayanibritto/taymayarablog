@@ -10,9 +10,10 @@ export function Header() {
                 <Image
                     src="/logo.webp"
                     alt="Logo do Blog"
-                    fill
+                    width={384}
+                    height={256}
                     priority
-                    sizes="(max-width: 640px) 90vw, 384px"
+                    loading="eager"
                 />
             </div>
 
