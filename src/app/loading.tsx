@@ -12,9 +12,12 @@ export default function Loading() {
             </p>
 
             <ul className={styles.ul} style={{ minHeight: "300px" }}>
-                <li>
-                    <p className={styles.message}>Carregando artigos...</p>
-                </li>
+                {[1,2,3].map((_, i) => (
+                    <li key={i}>
+                        <p className={styles.message}>Carregando artigos...</p>
+                    </li>
+                ))}
+
             </ul>
 
         </main>
