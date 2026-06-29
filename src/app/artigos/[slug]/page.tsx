@@ -2,7 +2,8 @@ import { getPosts } from "@/src/lib/crudcrud";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
-import styles from './page.module.css';
+import pageStyles from './page.module.css';
+import styles from '../../global.module.css';
 
 export const dynamic = "force-static"; // Gera páginas estáticas para cada artigo com base no slug
 
@@ -61,7 +62,7 @@ export default async function PostPage({
     return (
         <main className={styles.main}>
 
-            <div className={styles.link__container}>
+            <div className={styles.container__link}>
                 <Link href="/" className={styles.link}>
                     ← Voltar
                 </Link>
@@ -69,7 +70,7 @@ export default async function PostPage({
 
             <h1 className={styles.title}>{post.title}</h1>
 
-            <p className={styles.signature}>Por {post.author}, em {new Date(post.publishedAt).toLocaleDateString("pt-BR")}</p>
+            <p className={pageStyles.signature}>Por {post.author}, em {new Date(post.publishedAt).toLocaleDateString("pt-BR")}</p>
 
             <article>
                 <p className={styles.text}>{post.content}</p>

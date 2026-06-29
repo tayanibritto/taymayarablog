@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from './page.module.css';
+import styles from '../global.module.css';
 
 export const dynamic = "force-static"; // Gera páginas estáticas
 
@@ -7,7 +7,7 @@ export default function Sobre() {
     return (
         <main className={styles.main}>
 
-            <div className={styles.link__container}>
+            <div className={styles.container__link}>
 
                 <Link href="/" className={styles.link}>
                     ← Voltar

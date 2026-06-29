@@ -49,7 +49,7 @@
 }
 
 .nav__publish {
-    color: #ff828c;
+    color: #d64550;
     padding: 8px 16px;
     border-radius: 4px;
     font-weight: 500;
@@ -58,7 +58,7 @@
 }
 
 .nav__publish:hover {
-    color: #ff1d30;
+    color: #d11827;
     background: #f0e2ea;
     transition: 0.2s ease;
 }

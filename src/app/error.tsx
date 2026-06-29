@@ -1,6 +1,7 @@
 "use client";
 
 import styles from './main.module.css';
+import global from './global.module.css';
 import Image from 'next/image';
 
 export default function Error({
@@ -10,7 +11,7 @@ export default function Error({
     error: Error;
     reset: () => void;}) {
     return (
-        <main className={styles.main}>
+        <main className={global.main}>
 
             <h2 className={styles.h2}>Ops... Ocorreu um erro!</h2>
 

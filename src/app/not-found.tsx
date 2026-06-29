@@ -1,9 +1,10 @@
 import styles from './main.module.css';
+import global from './global.module.css';
 import Image from 'next/image';
 
 export default function NotFound() {
     return (
-        <main className={styles.main}>
+        <main className={global.main}>
 
             <Image src="/not-found.png" alt="Página não encontrada" width={200} height={200} className={styles.img} />
 

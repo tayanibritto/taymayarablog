@@ -1,3 +1,51 @@
 .globalFont {
     font-family:Arial, Helvetica, sans-serif;
 }
+
+/* Container padrão de páginas */
+.main {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+/* Link padrão de navegação */
+.link {
+    display: inline-block;
+    margin: 1rem 0;
+    text-decoration: none;
+    color: #69b3d1;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+.link:hover {
+    color: #00b7ff;
+    background: #e2e8f0;
+    transition: 0.2s ease;
+}
+
+/* Container do botão VOLTAR */
+.container__link {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+/* Título padrão */
+.title {
+    margin-bottom: 2rem;
+    font-size: 32px;
+    color: #ff828c;
+    text-align: center;
+}
+
+/* Texto padrão */
+.text {
+    font-size: 16px;
+    color: #334155;
+    line-height: 1.6;
+    margin: 1rem 0;
+    text-align: justify;
+}

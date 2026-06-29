@@ -8,7 +8,7 @@ export function Header() {
 
             <div className={styles.logo}>
                 <Image
-                    src="/logo.png"
+                    src="/logo.webp"
                     alt="Logo do Blog"
                     fill
                     priority

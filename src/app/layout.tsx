@@ -17,7 +17,7 @@ export default function RootLayout({
         <html lang="pt-BR">
             <body className={styles.globalFont}>
                 <Header />
-                {children}
+                    {children}
                 <Footer />
             </body>
         </html>

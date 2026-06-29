@@ -1,5 +1,6 @@
 import Link from "next/link";
-import styles from './page.module.css';
+import pageStyles from './page.module.css';
+import styles from '../global.module.css';
 
 export const dynamic = "force-static"; // Gera páginas estáticas
 
@@ -7,7 +8,7 @@ export default function Contato() {
     return (
         <main className={styles.main}>
 
-            <div className={styles.link__container}>
+            <div className={styles.container__link}>
 
                 <Link href="/" className={styles.link}>
                     ← Voltar
@@ -21,29 +22,29 @@ export default function Contato() {
                 Se você deseja entrar em contato comigo, seja para tirar dúvidas, sugerir temas para artigos ou apenas dizer oi, fique à vontade para preencher o formulário abaixo:
             </p>
 
-            <form className={styles.form}>
+            <form className={pageStyles.form}>
 
                 <input
                     type="text"
                     placeholder="Seu nome"
                     aria-label="Escrever nome"
-                    className={styles.form__input}
+                    className={pageStyles.form__input}
                 />
                 <input
                     type="email"
                     placeholder="Seu email"
                     aria-label="Escrever email"
-                    className={styles.form__input}
+                    className={pageStyles.form__input}
                 />
                 <textarea
                     placeholder="Sua mensagem" 
                     aria-label="Escrever mensagem"
-                    className={styles.form__input}
+                    className={pageStyles.form__input}
                 />
 
                 <button
                     type="submit"
-                    className={styles.form__button}
+                    className={pageStyles.form__button}
                 >
                     Enviar
                 </button>

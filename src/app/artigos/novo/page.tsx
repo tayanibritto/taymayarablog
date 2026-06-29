@@ -1,7 +1,8 @@
 "use client";
 
 import { CreatePost } from "@/src/components/CreatePost";
-import styles from './page.module.css';
+import pageStyles from './page.module.css';
+import styles from '../../global.module.css';
 import Link from "next/link";
 import { useState } from "react";
 
@@ -11,7 +12,7 @@ export default function NewArticle() {
 
     return (
         <main className={styles.main}>
-            <div className={styles.link__container}>
+            <div className={styles.container__link}>
 
                 <Link href="/" className={styles.link}>
                     ← Voltar
@@ -23,7 +24,7 @@ export default function NewArticle() {
 
             {/* Exibe mensagem de sucesso depois que o post for criado */}
             {createdSlug && (
-                <p className={styles.success}>
+                <p className={pageStyles.success}>
                     Artigo publicado! <Link href={`/artigos/${createdSlug}`} className={styles.link}>Clique aqui para ler</Link>.
                 </p>
             )}
