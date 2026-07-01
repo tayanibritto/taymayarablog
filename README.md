@@ -223,7 +223,7 @@ Para que a aplicação funcione corretamente, é necessário configurar as vari�
 1. Crie um arquivo chamado '.env.local' na raiz do projeto.
 2. Adicione o seguinte conteúdo:
     - NEXT_PUBLIC_API_URL=https://crudcrud.com/api
-    - NEXT_PUBLIC_CRUD_API=SUA_CHAVE_AQUI
+    - NEXT_PUBLIC_CRUD_API_KEY=SUA_CHAVE_AQUI
     - NEXT_PUBLIC_CRUD_API_COLLECTION=posts
 
 ## Importante:
