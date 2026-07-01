@@ -154,17 +154,6 @@ Trata-se de pontos muito relevantes.
 
 ## Melhorias Aplicadas
 
-![Lighthouse Depois](./public/screenshots/depois-1.png)
-![Lighthouse Depois](./public/screenshots/depois-2.png)
-![Lighthouse Depois](./public/screenshots/depois-3.png)
-![Lighthouse Depois](./public/screenshots/depois-4.png)
-![Lighthouse Depois](./public/screenshots/depois-5.png)
-![Lighthouse Depois](./public/screenshots/depois-6.png)
-![Lighthouse Depois](./public/screenshots/depois-7.png)
-![Lighthouse Depois](./public/screenshots/depois-8.png)
-
-Link do relatório do PageSpeed Insights: https://pagespeed.web.dev/analysis/https-taymayarablog-vercel-app/wlqt5kjjp2?form_factor=desktop
-
 - Performance:
 1. Otimização de todas as imagens, convertendo arquivos .png e .jpg para .webp, com especial atenção para a logo, que foi redimensionada para um tamanho mais adequado ao layout.
 2. Uso de 'priority' no componente <Image /> da logo.
@@ -180,6 +169,17 @@ Link do relatório do PageSpeed Insights: https://pagespeed.web.dev/analysis/htt
 1. Ajuste de layout de 'loading.tsx', para causar menor impacto de shift na aplicação após carregamento dos posts. O shift não foi completamente eliminado, uma vez que a página de carregamento dificilmente alcançará o mesmo tamanho da tela de posts.
 
 ## Análise Final - APÓS AS CORREÇÕES
+
+![Lighthouse Depois](./public/screenshots/depois-1.png)
+![Lighthouse Depois](./public/screenshots/depois-2.png)
+![Lighthouse Depois](./public/screenshots/depois-3.png)
+![Lighthouse Depois](./public/screenshots/depois-4.png)
+![Lighthouse Depois](./public/screenshots/depois-5.png)
+![Lighthouse Depois](./public/screenshots/depois-6.png)
+![Lighthouse Depois](./public/screenshots/depois-7.png)
+![Lighthouse Depois](./public/screenshots/depois-8.png)
+
+Link do relatório do PageSpeed Insights: https://pagespeed.web.dev/analysis/https-taymayarablog-vercel-app/wlqt5kjjp2?form_factor=desktop
 
 - Resultado final Lighthouse e PageSpeed Insights:
 1. 100 em todos os requisitos avaliados: Performance, Acessibilidade, Best Practices e SEO.
